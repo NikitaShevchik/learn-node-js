@@ -25,4 +25,10 @@ function sum(arr) {
     return res;
 }
 
-module.exports = { square, cube, avg, digitsSum }
+// module.exports = { square, cube, avg, digitsSum }
+
+//С помощью модуля из предыдущей задачи найдите сумму квадрата и куба числа 3.
+// Импортируйте для этого только необходимые функции.
+module.exports = { square, cube }
+
+
