@@ -31,3 +31,25 @@ let oneF = require('./onefunction');
 console.log(oneF.ye(5))
 console.log(oneF.square(5), oneF.cube(10))
 console.log(oneF.squareTwo(11), oneF.cubeTwo(11))
+
+
+let parameter = require('./parameter');
+let data = 'abcde'; // эти данные хотим передать
+let test = parameter(data, 2)
+console.log(test)
+
+// let _ = require('underscore');
+// let arr = [1, 2, 3, 4, 5]
+// let resUn = _.first(arr) + _.last(arr);
+// console.log(resUn);
+
+let { first, last } = require('underscore');
+let arr = [11, 2, 3, 4, 55]
+let resUn = first(arr) + last(arr);
+console.log(resUn);
+
+let lo = require('lodash')
+let testArr = [1, 2, 2, 3, 4, 5, 6, 2]
+let resLodash = lo.sortedIndexOf(testArr, 2)
+console.log(resLodash)
+

@@ -5,5 +5,9 @@
   },
   "scripts": {
     "build": "webpack"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "underscore": "^1.13.4"
   }
 }
