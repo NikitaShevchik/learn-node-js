@@ -63,3 +63,32 @@
 import { square, cube, avg, digitsSum } from './math.js';
 let res = square(3) + cube(3)
 console.log(res)
+
+// import test from './test.js'
+// console.log(test())
+
+
+import array from './fye.js'
+function sumAr(arr) {
+    let sum = 0;
+    for (let i of arr) {
+        sum = sum + i;
+    }
+    return sum;
+}
+console.log(`Сумма всех чисел массива [${array}] равна ${sumAr(array)}`)
+
+
+
+
+import func from './test.js'
+let data = 'abcde'; // эти данные хотим передать
+let test = func(data)
+console.log(test)
+
+
+import _ from 'underscore';
+
+let arr = [1, 2, 3, 4, 5]
+let ress = _.first(arr) + _.last(arr);
+console.log(ress);

@@ -35,3 +35,4 @@ function sum(arr) {
 
     return res;
 }
+
