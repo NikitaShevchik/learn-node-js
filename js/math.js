@@ -1,6 +1,37 @@
-module.exports.square = function (num) {
-    return num * num;
+// module.exports.square = function (num) {
+//     return num * num;
+// }
+// module.exports.cube = function (num) {
+//     return num * num * num;
+// }
+
+// export function square(num) {
+//     return num * num;
+// }
+// export function cube(num) {
+//     return num * num * num;
+// }
+
+export function square(num) {
+    return num ** 2;
 }
-module.exports.cube = function (num) {
-    return num * num * num;
+export function cube(num) {
+    return num ** 3;
+}
+export function avg(arr) {
+    return sum(arr, 1) / arr.length;
+}
+export function digitsSum(num) {
+    return sum(String(num).split(''));
+}
+
+// вспомогательная функция
+function sum(arr) {
+    let res = 0;
+
+    for (let elem of arr) {
+        res += +elem;
+    }
+
+    return res;
 }
